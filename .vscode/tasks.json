@@ -1,0 +1,67 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "1 · Anteprima sito (http://localhost:5173)",
+      "type": "shell",
+      "command": "python3 -m http.server 5173 --directory site",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "2 · Pubblica su Netlify",
+      "type": "shell",
+      "command": "npx --yes netlify-cli deploy --prod --dir=site",
+      "problemMatcher": []
+    },
+    {
+      "label": "Coppie · Elenco",
+      "type": "shell",
+      "command": "python3 tools/pairs.py list",
+      "problemMatcher": []
+    },
+    {
+      "label": "Coppie · Aggiungi",
+      "type": "shell",
+      "command": "python3 tools/pairs.py add --id \"${input:pid}\" --title \"${input:title}\" --sketch \"${input:sketch}\" --form \"${input:form}\" --caption \"${input:caption}\"",
+      "problemMatcher": []
+    },
+    {
+      "label": "Coppie · Aggiungi (larga)",
+      "type": "shell",
+      "command": "python3 tools/pairs.py add --wide --id \"${input:pid}\" --title \"${input:title}\" --sketch \"${input:sketch}\" --form \"${input:form}\" --caption \"${input:caption}\"",
+      "problemMatcher": []
+    },
+    {
+      "label": "Coppie · Rimuovi",
+      "type": "shell",
+      "command": "python3 tools/pairs.py remove --id \"${input:pid}\"",
+      "problemMatcher": []
+    },
+    {
+      "label": "Coppie · Riallinea numeri, contatori e sitemap",
+      "type": "shell",
+      "command": "python3 tools/pairs.py refresh",
+      "problemMatcher": []
+    },
+    {
+      "label": "Setup · Installa Pillow (una volta)",
+      "type": "shell",
+      "command": "python3 -m pip install --user Pillow",
+      "problemMatcher": []
+    },
+    {
+      "label": "Setup · Collega Netlify (una volta)",
+      "type": "shell",
+      "command": "npx --yes netlify-cli login && npx --yes netlify-cli link --name bespoke-speculoos-15f759",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    { "id": "pid", "type": "promptString", "description": "ID breve senza spazi (es. verum)" },
+    { "id": "title", "type": "promptString", "description": "Titolo della coppia (es. Verum)" },
+    { "id": "sketch", "type": "promptString", "description": "Percorso dello schizzo (trascina il file nel terminale per copiarlo)" },
+    { "id": "form", "type": "promptString", "description": "Percorso dell'immagine finita" },
+    { "id": "caption", "type": "promptString", "description": "Frase sotto la coppia" }
+  ]
+}

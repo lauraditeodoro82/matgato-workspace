@@ -1,0 +1,7 @@
+{
+  "liveServer.settings.root": "/site",
+  "liveServer.settings.port": 5173,
+  "files.exclude": { "**/.DS_Store": true, "**/__pycache__": true },
+  "html.format.wrapLineLength": 0,
+  "editor.wordWrap": "on"
+}
