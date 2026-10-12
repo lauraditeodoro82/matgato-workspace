@@ -26,9 +26,9 @@
 <meta name="twitter:title" content="MATTEO / SKETCHBOOK">
 <meta name="twitter:description" content="Art director e graphic designer. Dallo schizzo a penna alla forma 3D.">
 <meta name="twitter:image" content="https://matgato.malaccessories.com/og-image.jpg">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://matgato.malaccessories.com/#matteo", "name": "Matteo", "jobTitle": "Art Director & Graphic Designer", "email": "mailto:info@malaccessories.com", "url": "https://matgato.malaccessories.com/", "image": "https://matgato.malaccessories.com/images/winged-skull.webp", "worksFor": {"@type": "Organization", "name": "MaLa", "url": "https://malaccessories.com"}, "knowsAbout": ["Art direction", "Graphic design", "Illustrazione", "Digital art 3D", "Digital print"]}, {"@type": "WebSite", "@id": "https://matgato.malaccessories.com/#website", "url": "https://matgato.malaccessories.com/", "name": "Matteo / Sketchbook", "inLanguage": "it", "author": {"@id": "https://matgato.malaccessories.com/#matteo"}}, {"@type": "CollectionPage", "url": "https://matgato.malaccessories.com/", "name": "Matteo / Sketchbook", "description": "Sketchbook di Matteo, art director e graphic designer: schizzi a penna, 19 passaggi dallo schizzo alla forma 3D e soggetti in digital print. Teschi, volti, creature.", "inLanguage": "it", "isPartOf": {"@id": "https://matgato.malaccessories.com/#website"}, "author": {"@id": "https://matgato.malaccessories.com/#matteo"}, "primaryImageOfPage": "https://matgato.malaccessories.com/og-image.jpg"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://matgato.malaccessories.com/#matteo", "name": "Matteo", "jobTitle": "Art Director & Graphic Designer", "email": "mailto:info@malaccessories.com", "url": "https://matgato.malaccessories.com/", "image": "https://matgato.malaccessories.com/images/winged-skull.webp", "worksFor": {"@type": "Organization", "name": "MaLa", "url": "https://malaccessories.com"}, "knowsAbout": ["Art direction", "Graphic design", "Illustrazione", "Digital art 3D", "Digital print"]}, {"@type": "WebSite", "@id": "https://matgato.malaccessories.com/#website", "url": "https://matgato.malaccessories.com/", "name": "Matteo / Sketchbook", "inLanguage": "it", "author": {"@id": "https://matgato.malaccessories.com/#matteo"}}, {"@type": "CollectionPage", "url": "https://matgato.malaccessories.com/", "name": "Matteo / Sketchbook", "description": "Sketchbook di Matteo, art director e graphic designer: schizzi a penna, 20 passaggi dallo schizzo alla forma 3D e soggetti in digital print. Teschi, volti, creature.", "inLanguage": "it", "isPartOf": {"@id": "https://matgato.malaccessories.com/#website"}, "author": {"@id": "https://matgato.malaccessories.com/#matteo"}, "primaryImageOfPage": "https://matgato.malaccessories.com/og-image.jpg"}]}</script>
 <meta name="theme-color" content="#090a0b">
-<meta name="description" content="Sketchbook di Matteo, art director e graphic designer: schizzi a penna, 19 passaggi dallo schizzo alla forma 3D e soggetti in digital print. Teschi, volti, creature.">
+<meta name="description" content="Sketchbook di Matteo, art director e graphic designer: schizzi a penna, 20 passaggi dallo schizzo alla forma 3D e soggetti in digital print. Teschi, volti, creature.">
 <style>
 @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/cormorant-garamond-latin-400-normal.woff2) format('woff2')}
 @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-latin-500-normal.woff2) format('woff2')}
@@ -63,7 +63,7 @@
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html{scroll-behavior:smooth;background:var(--bg)}
-body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14px;line-height:1.35;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14px;line-height:1.35;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 40% -10%,rgba(255,255,255,.055),transparent 34%)}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit}
@@ -72,8 +72,8 @@ figure{margin:0}
 :focus-visible{outline:1px solid var(--warm);outline-offset:3px}
 h1,h2,.big{text-wrap:balance}
 
-.shell{width:min(1440px,calc(100% - 24px));margin:12px auto 12px}
-.panel{background:var(--panel);border:1px solid var(--line-soft);border-radius:var(--radius);overflow:hidden;overflow:clip;box-shadow:0 18px 50px rgba(0,0,0,.28)}
+.shell{width:100%;margin:0}
+.panel{background:var(--panel);border:1px solid var(--line-soft);border-left:0;border-right:0;border-radius:0;overflow:hidden;overflow:clip;box-shadow:0 18px 50px rgba(0,0,0,.28)}
 
 /* top bar */
 .topbar{position:absolute;z-index:10;top:0;left:0;right:0;padding:22px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:20px;background:linear-gradient(to bottom,rgba(7,8,9,.72),rgba(7,8,9,0))}
@@ -124,16 +124,16 @@ h1{font-family:var(--serif);font-size:clamp(68px,7.6vw,132px);font-weight:400;li
 .filters .count{color:var(--dim);margin-left:5px}
 
 /* sections */
-.section{padding:54px var(--pad) 64px;scroll-margin-top:52px}
-.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:28px}
+.section{padding:50px var(--pad) 58px;scroll-margin-top:52px}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:22px}
 .section-kicker{font-size:9px;text-transform:uppercase;letter-spacing:.18em;color:var(--warm-soft);margin-bottom:7px}
 .section-title{font-family:var(--serif);font-size:clamp(46px,5vw,82px);font-weight:400;line-height:.9;letter-spacing:-.035em;margin:0}
 .section-sub{max-width:380px;color:var(--muted);font-size:12px;line-height:1.6;text-align:right}
 
 /* gallery: colonne a misura naturale, le opere non vengono tagliate */
-.gallery{columns:3 280px;column-gap:10px}
-.card{position:relative;break-inside:avoid;margin:0 0 10px;background:var(--ink);border-radius:6px;overflow:hidden;border:1px solid var(--line-soft);cursor:zoom-in}
-.card img{width:100%;height:auto;transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .5s ease}
+.gallery{columns:3 260px;column-gap:12px}
+.card{position:relative;break-inside:avoid;margin:0 0 12px;background:var(--ink);border-radius:8px;overflow:hidden;border:1px solid var(--line-soft);cursor:zoom-in;box-shadow:0 10px 22px rgba(0,0,0,.12)}
+.card img{width:100%;height:auto;transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .5s ease;object-fit:cover}
 .card:hover img{transform:scale(1.025);filter:saturate(1.08)}
 .card .label,.pair .label{position:absolute;left:12px;bottom:12px;padding:6px 8px;background:var(--veil);backdrop-filter:blur(10px);font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-2);border:1px solid rgba(255,255,255,.09);pointer-events:none}
 .gallery.sketch .card{background:#e9e4da}
@@ -245,13 +245,13 @@ html:not(.js) #copy-mail{display:none}
   .pairs{grid-template-columns:1fr}.pair.wide .compare{aspect-ratio:4/5}
 }
 @media(max-width:640px){
-  .shell{width:calc(100% - 12px);margin:6px auto}.panel{border-radius:11px}
+  .shell{width:100%;margin:0}.panel{border-radius:0}
   .topbar{padding:16px}.brand{font-size:9px;letter-spacing:.12em}.brand-mark{width:25px;height:25px;font-size:16px}.nav{gap:13px;font-size:8px}
   .hero{min-height:620px;height:82vh}.hero-media:after{background:linear-gradient(0deg,rgba(8,9,10,.92) 0%,rgba(8,9,10,.32) 54%,rgba(8,9,10,.25) 100%)}
   .hero-media img{object-position:60% 30%}
   .hero-content{padding:0 16px 30px}.eyebrow{font-size:8px}.hero-copy{font-size:12px;max-width:330px}h1{font-size:22vw;margin-bottom:17px}.hero-actions{margin-top:20px}.hero-meta{margin-top:20px;gap:14px;font-size:8px}
   .filters{padding:14px 16px;gap:18px}.filters a{font-size:8px}
-  .section{padding:38px 16px 44px}.section-title{font-size:16vw}.section-sub{font-size:11px;max-width:320px}
+  .section{padding:38px 16px 44px}.section-title{font-size:16vw}.section-sub{font-size:11px;max-width:320px;text-align:left}
   .gallery{columns:2;column-gap:8px}.card{margin-bottom:8px}
   .pair-cap{flex-direction:column;gap:6px}.pair-cap p{text-align:left}
   .interlude{padding:48px 16px}.interlude .big{font-size:12vw}.interlude .side{font-size:11px}
@@ -275,7 +275,7 @@ html:not(.js) #copy-mail{display:none}
         <a href="#top" class="active hide-mobile">Home</a>
         
         <a href="#form">Sketch → Form</a>
-        <a href="#subject" class="hide-mobile">Subject</a>
+        <a href="#subject" class="hide-mobile">Subjects</a>
         <a href="#contatti">Contatti</a>
       </nav>
     </header>
@@ -288,14 +288,14 @@ html:not(.js) #copy-mail{display:none}
           <h1>MATTEO</h1>
           <div class="hero-copy">Art director. Graphic designer.<br><br><strong>Mi interessa ciò che rimane quando togli tutto il resto.</strong></div>
           <div class="hero-actions"><a class="btn" href="#form">ENTER SKETCHBOOK</a><a class="btn alt" href="#subject">SUBJECT <span class="play">→</span></a></div>
-          <div class="hero-meta"><span><i class="dot"></i> DRAW / LOOK / IMAGINE</span><span>45 tavole</span><span>01—2026</span></div>
+          <div class="hero-meta"><span><i class="dot"></i> DRAW / LOOK / IMAGINE</span><span>47 tavole</span><span>01—2026</span></div>
         </div>
       </section>
 
       <nav class="filters" aria-label="Sezioni">
         <a href="#top" class="f-brand" aria-label="Torna in cima"><span class="brand-mark">M</span></a>
-        <a href="#form" class="active">Sketch → Form<span class="count">19</span></a>
-        <a href="#subject">Subject<span class="count">17</span></a>
+        <a href="#form" class="active">Sketch → Form<span class="count">20</span></a>
+        <a href="#subject">Subjects<span class="count">20</span></a>
         <a href="#the-skull">The skull</a>
         <a href="#table">On the table<span class="count">02</span></a>
         <a href="#m">M</a>
@@ -305,10 +305,23 @@ html:not(.js) #copy-mail{display:none}
       <!-- 02 · SKETCH → FORM -->
       <section id="form" class="section">
         <div class="section-head fade-up">
-          <div><div class="section-kicker">01 / Sketch → Form</div><h2 class="section-title">LA STESSA COSA,<br>DUE VOLTE</h2></div>
+          <div><div class="section-kicker">01 / Sketch → Form</div><h2 class="section-title">LE FORME PRENDONO STRADE TUTTE LORO</h2></div>
           <div class="section-sub">Prima la penna, poi il colore.<br>Trascina la linea per vedere cosa resta e cosa si aggiunge.</div>
         </div>
         <div class="pairs">
+          <div class="pair wide fade-up">
+            <div class="compare" tabindex="0" style="aspect-ratio:3/4">
+              <input type="checkbox" class="flip" id="flip-istante-imperfetto" aria-label="Mostra la forma finita">
+              <img class="before" src="images/sk-istante-imperfetto.webp" alt="Schizzo: volto diviso tra una metà umana e una meccanica" loading="lazy">
+              <img class="after" src="images/istante-imperfetto.webp" alt="Forma finita: volto diviso tra una metà umana e una meccanica" loading="lazy">
+              <span class="tag l">Sketch</span><span class="tag r">Form</span>
+              <input type="range" id="cmp-istante-imperfetto" min="0" max="100" value="50" aria-label="Confronta schizzo e forma: Istante imperfetto (Caos)">
+              <span class="handle"></span>
+              <label for="flip-istante-imperfetto" class="hit"><span>Tocca</span></label>
+            </div>
+            <div class="pair-cap"><h3><span class="n">01</span>Istante imperfetto (Caos)</h3><p>Una mappa di parole e colori divide il volto tra umano e meccanico.</p></div>
+          </div>
+
           <div class="pair fade-up">
             <div class="compare" tabindex="0">
               <input type="checkbox" class="flip" id="flip-wings" aria-label="Mostra la forma finita">
@@ -319,7 +332,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-wings" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">01</span>Wings</h3><p>Un corno, un occhio chiuso, le ali aperte. Lo schizzo aveva già deciso tutto.</p></div>
+            <div class="pair-cap"><h3><span class="n">02</span>Wings</h3><p>Un corno, un occhio chiuso, le ali aperte. Lo schizzo aveva già deciso tutto.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -332,7 +345,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-demon" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">02</span>Demon</h3><p>Il primo segno è già lo sguardo.</p></div>
+            <div class="pair-cap"><h3><span class="n">03</span>Demon</h3><p>Il primo segno è già lo sguardo.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -345,7 +358,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-cosmos" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">03</span>Cosmos</h3><p>Le zanne restano. Intorno, tutto lo spazio.</p></div>
+            <div class="pair-cap"><h3><span class="n">04</span>Cosmos</h3><p>Le zanne restano. Intorno, tutto lo spazio.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -358,7 +371,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-ears" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">04</span>Ears</h3><p>Un occhio solo, un chiodo, due orecchie. Il gioco diventa inquieto.</p></div>
+            <div class="pair-cap"><h3><span class="n">05</span>Ears</h3><p>Un occhio solo, un chiodo, due orecchie. Il gioco diventa inquieto.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -371,7 +384,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-grin" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">05</span>Grin</h3><p>Inchiostro rosso, poi tutti i colori insieme.</p></div>
+            <div class="pair-cap"><h3><span class="n">06</span>Grin</h3><p>Inchiostro rosso, poi tutti i colori insieme.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -384,7 +397,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-split" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">06</span>Split</h3><p>Una penna su carta a quadretti. Poi il muro, i graffiti, i denti d'oro.</p></div>
+            <div class="pair-cap"><h3><span class="n">07</span>Split</h3><p>Una penna su carta a quadretti. Poi il muro, i graffiti, i denti d'oro.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -397,7 +410,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-cross" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">07</span>Cross</h3><p>La croce, la lama, l'inchiostro che cola. Poi la macchina intorno.</p></div>
+            <div class="pair-cap"><h3><span class="n">08</span>Cross</h3><p>La croce, la lama, l'inchiostro che cola. Poi la macchina intorno.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -410,7 +423,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-veritas" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">08</span>Veritas</h3><p>Un teschio diventa un bicchiere. Il blu si fa cristallo, la goccia diventa rossa.</p></div>
+            <div class="pair-cap"><h3><span class="n">09</span>Veritas</h3><p>Un teschio diventa un bicchiere. Il blu si fa cristallo, la goccia diventa rossa.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -423,7 +436,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-oracle" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">09</span>Oracle</h3><p>Il terzo occhio diventa una gemma. Intorno, un tempio in rovina.</p></div>
+            <div class="pair-cap"><h3><span class="n">10</span>Oracle</h3><p>Il terzo occhio diventa una gemma. Intorno, un tempio in rovina.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -436,7 +449,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-storm" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">10</span>Storm</h3><p>Dalla carta a quadretti al bronzo. L'occhio diventa cristallo, fuori arriva la tempesta.</p></div>
+            <div class="pair-cap"><h3><span class="n">11</span>Storm</h3><p>Dalla carta a quadretti al bronzo. L'occhio diventa cristallo, fuori arriva la tempesta.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -449,7 +462,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-sir" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">11</span>Like a Sir</h3><p>La scritta resta. Il teschio diventa metallo e intorno compare la strada.</p></div>
+            <div class="pair-cap"><h3><span class="n">12</span>Like a Sir</h3><p>La scritta resta. Il teschio diventa metallo e intorno compare la strada.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -462,7 +475,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-circuit" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">12</span>Circuit</h3><p>Dal pennarello alle gemme. I colori restano dove erano.</p></div>
+            <div class="pair-cap"><h3><span class="n">13</span>Circuit</h3><p>Dal pennarello alle gemme. I colori restano dove erano.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -475,7 +488,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-emerald" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">13</span>Emerald</h3><p>Stesse linee, stessi colori. L'orbita vuota diventa uno smeraldo.</p></div>
+            <div class="pair-cap"><h3><span class="n">14</span>Emerald</h3><p>Stesse linee, stessi colori. L'orbita vuota diventa uno smeraldo.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -488,7 +501,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-heart" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">14</span>Heart</h3><p>Dal disegno digitale all'oggetto: il cuore diventa oro, l'occhio vetro verde.</p></div>
+            <div class="pair-cap"><h3><span class="n">15</span>Heart</h3><p>Dal disegno digitale all'oggetto: il cuore diventa oro, l'occhio vetro verde.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -501,7 +514,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-mask" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">15</span>Mask</h3><p>Il teschio come copricapo. Il pennarello diventa ceramica e smeraldo.</p></div>
+            <div class="pair-cap"><h3><span class="n">16</span>Mask</h3><p>Il teschio come copricapo. Il pennarello diventa ceramica e smeraldo.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -514,7 +527,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-butterfly" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">16</span>Butterfly</h3><p>La farfalla resta dov'era. Il blu dell'orbita diventa un diamante.</p></div>
+            <div class="pair-cap"><h3><span class="n">17</span>Butterfly</h3><p>La farfalla resta dov'era. Il blu dell'orbita diventa un diamante.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -527,7 +540,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-verum" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">17</span>Verum</h3><p>Videndo dicere verum. Il pennarello diventa ferro, ruggine e ingranaggi.</p></div>
+            <div class="pair-cap"><h3><span class="n">18</span>Verum</h3><p>Videndo dicere verum. Il pennarello diventa ferro, ruggine e ingranaggi.</p></div>
           </div>
 
           <div class="pair fade-up">
@@ -540,7 +553,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-shadow" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">18</span>Shadow</h3><p>Tutto inchiostro, un solo colore: il cuore. Nella forma finita diventa un cuore vero.</p></div>
+            <div class="pair-cap"><h3><span class="n">19</span>Shadow</h3><p>Tutto inchiostro, un solo colore: il cuore. Nella forma finita diventa un cuore vero.</p></div>
           </div>
 
           <div class="pair wide fade-up">
@@ -553,7 +566,7 @@ html:not(.js) #copy-mail{display:none}
               <span class="handle"></span>
               <label for="flip-millennium" class="hit"><span>Tocca</span></label>
             </div>
-            <div class="pair-cap"><h3><span class="n">19</span>Millennium</h3><p>"New millennium, my world &amp; my family". Disegnato nel 2000, venticinque anni dopo diventa un muro.</p></div>
+            <div class="pair-cap"><h3><span class="n">20</span>Millennium</h3><p>"New millennium, my world &amp; my family". Disegnato nel 2000, venticinque anni dopo diventa un muro.</p></div>
           </div>
         </div>
       </section>
@@ -561,27 +574,30 @@ html:not(.js) #copy-mail{display:none}
       <!-- 03 · CREATURES -->
       <section id="subject" class="section" style="border-top:1px solid var(--line)">
         <div class="section-head fade-up">
-          <div><div class="section-kicker">02 / Digital print</div><h2 class="section-title">SUBJECT</h2></div>
+          <div><div class="section-kicker">02 / Digital print</div><h2 class="section-title">SUBJECTS</h2></div>
           <div class="section-sub">Volti, teschi, creature. Non li cerco. Ritornano.<br><span class="dp-note">Digital print. Quasi tutti in 3D.</span></div>
         </div>
         <div class="gallery subject">
-          <figure class="card reveal-img"><img loading="lazy" src="images/winged-skull.webp" alt="Teschio alato con corno, 3D digital print" width="1098" height="976"><span class="dp">3D · Digital print</span><span class="label">01 / wings</span></figure>
-          <figure class="card reveal-img"><img loading="lazy" src="images/oracle.webp" alt="Volto con il terzo occhio tra colonne greche, 3D digital print" width="1017" height="1018"><span class="dp">3D · Digital print</span><span class="label">02 / oracle</span></figure>
-          <figure class="card reveal-img"><img loading="lazy" src="images/butterfly-skull.webp" alt="Teschio verde con farfalla e occhio di gemma, 3D digital print" width="987" height="1024"><span class="dp">3D · Digital print</span><span class="label">03 / butterfly</span></figure>
-          <figure class="card reveal-img"><img loading="lazy" src="images/storm.webp" alt="Teschio alieno di bronzo nella tempesta, 3D digital print" width="937" height="1126"><span class="dp">3D · Digital print</span><span class="label">04 / storm</span></figure>
-          <figure class="card reveal-img"><img loading="lazy" src="images/cosmic-skull-tall.webp" alt="Teschio cosmico con occhio luminoso, 3D digital print" width="704" height="1521"><span class="dp">3D · Digital print</span><span class="label">05 / cosmos</span></figure>
-          <figure class="card reveal-img"><img loading="lazy" src="images/demon.webp" alt="Creatura demoniaca con cresta, 3D digital print" width="960" height="1116"><span class="dp">3D · Digital print</span><span class="label">06 / demon</span></figure>
-          <figure class="card reveal-img"><img loading="lazy" src="images/skull-woman.webp" alt="Teschio colorato sopra un volto di donna, 3D digital print" width="1024" height="1024"><span class="dp">3D · Digital print</span><span class="label">07 / mask</span></figure>
-          <figure class="card reveal-img"><img loading="lazy" src="images/circuit.webp" alt="Teschio con gemme su circuiti, 3D digital print" width="697" height="1198"><span class="dp">3D · Digital print</span><span class="label">08 / circuit</span></figure>
-          <figure class="card reveal-img"><img loading="lazy" src="images/grin-psychedelic.webp" alt="Volto che ghigna con occhio di gemma, 3D digital print" width="697" height="1506"><span class="dp">3D · Digital print</span><span class="label">09 / grin</span></figure>
-          <figure class="card reveal-img"><img loading="lazy" src="images/mouse-skull-ornate.webp" alt="Teschio verde con orecchie e chiodo su fondo ornamentale, 3D digital print" width="704" height="1522"><span class="dp">3D · Digital print</span><span class="label">10 / ears</span></figure>
-          <figure class="card reveal-img"><img loading="lazy" src="images/sir.webp" alt="Teschio Like a Sir in metallo su una strada d'epoca, 3D digital print" width="1017" height="987"><span class="dp">3D · Digital print</span><span class="label">11 / like a sir</span></figure>
-          <figure class="card reveal-img"><img loading="lazy" src="images/veritas.webp" alt="Teschio Veritas con cristallo blu, 3D digital print" width="704" height="1167"><span class="dp">3D · Digital print</span><span class="label">12 / veritas</span></figure>
-          <figure class="card reveal-img"><img loading="lazy" src="images/steam-skull.webp" alt="Teschio con croce tra gli ingranaggi, 3D digital print" width="1024" height="1024"><span class="dp">3D · Digital print</span><span class="label">13 / machine</span></figure>
-          <figure class="card reveal-img"><img loading="lazy" src="images/graffiti-skull.webp" alt="Teschio diviso in un vicolo con graffiti, 3D digital print" width="697" height="1514"><span class="dp">3D · Digital print</span><span class="label">14 / street</span></figure>
-          <figure class="card reveal-img"><img loading="lazy" src="images/split-skull-render.webp" alt="Teschio diviso con occhio verde su onde blu, 3D digital print" width="1024" height="1024"><span class="dp">3D · Digital print</span><span class="label">15 / split</span></figure>
-          <figure class="card reveal-img"><img loading="lazy" src="images/heart.webp" alt="Teschio rosa con cuore d'oro e occhio di vetro verde, 3D digital print" width="697" height="1151"><span class="dp">3D · Digital print</span><span class="label">16 / heart</span></figure>
-          <figure class="card reveal-img"><img loading="lazy" src="images/portrait-green.webp" alt="Ritratto di donna dal volto verde con benda sull'occhio, digital print" width="484" height="762"><span class="dp">Digital print</span><span class="label">17 / gaze</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/subject-shadow.webp" alt="Maschera nera con cuore rosso e sfondo urbano, digital print" width="1080" height="1450"><span class="dp">Digital print</span><span class="label">01 / shadow</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/subject-millennium.webp" alt="Visione di volto umano e invadente con graffiti, digital print" width="1080" height="1450"><span class="dp">Digital print</span><span class="label">02 / millennium</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/subject-verum.webp" alt="Teschio verde in ambiente industriale, digital print" width="1080" height="1450"><span class="dp">Digital print</span><span class="label">03 / verum</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/winged-skull.webp" alt="Teschio alato con corno, 3D digital print" width="1098" height="976"><span class="dp">3D · Digital print</span><span class="label">04 / wings</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/oracle.webp" alt="Volto con il terzo occhio tra colonne greche, 3D digital print" width="1017" height="1018"><span class="dp">3D · Digital print</span><span class="label">05 / oracle</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/butterfly-skull.webp" alt="Teschio verde con farfalla e occhio di gemma, 3D digital print" width="987" height="1024"><span class="dp">3D · Digital print</span><span class="label">06 / butterfly</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/storm.webp" alt="Teschio alieno di bronzo nella tempesta, 3D digital print" width="937" height="1126"><span class="dp">3D · Digital print</span><span class="label">07 / storm</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/cosmic-skull-tall.webp" alt="Teschio cosmico con occhio luminoso, 3D digital print" width="704" height="1521"><span class="dp">3D · Digital print</span><span class="label">08 / cosmos</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/demon.webp" alt="Creatura demoniaca con cresta, 3D digital print" width="960" height="1116"><span class="dp">3D · Digital print</span><span class="label">09 / demon</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/skull-woman.webp" alt="Teschio colorato sopra un volto di donna, 3D digital print" width="1024" height="1024"><span class="dp">3D · Digital print</span><span class="label">10 / mask</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/circuit.webp" alt="Teschio con gemme su circuiti, 3D digital print" width="697" height="1198"><span class="dp">3D · Digital print</span><span class="label">11 / circuit</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/grin-psychedelic.webp" alt="Volto che ghigna con occhio di gemma, 3D digital print" width="697" height="1506"><span class="dp">3D · Digital print</span><span class="label">12 / grin</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/mouse-skull-ornate.webp" alt="Teschio verde con orecchie e chiodo su fondo ornamentale, 3D digital print" width="704" height="1522"><span class="dp">3D · Digital print</span><span class="label">13 / ears</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/sir.webp" alt="Teschio Like a Sir in metallo su una strada d'epoca, 3D digital print" width="1017" height="987"><span class="dp">3D · Digital print</span><span class="label">14 / like a sir</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/veritas.webp" alt="Teschio Veritas con cristallo blu, 3D digital print" width="704" height="1167"><span class="dp">3D · Digital print</span><span class="label">15 / veritas</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/steam-skull.webp" alt="Teschio con croce tra gli ingranaggi, 3D digital print" width="1024" height="1024"><span class="dp">3D · Digital print</span><span class="label">16 / machine</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/graffiti-skull.webp" alt="Teschio diviso in un vicolo con graffiti, 3D digital print" width="697" height="1514"><span class="dp">3D · Digital print</span><span class="label">17 / street</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/split-skull-render.webp" alt="Teschio diviso con occhio verde su onde blu, 3D digital print" width="1024" height="1024"><span class="dp">3D · Digital print</span><span class="label">18 / split</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/heart.webp" alt="Teschio rosa con cuore d'oro e occhio di vetro verde, 3D digital print" width="697" height="1151"><span class="dp">3D · Digital print</span><span class="label">19 / heart</span></figure>
+          <figure class="card reveal-img"><img loading="lazy" src="images/portrait-green.webp" alt="Ritratto di donna dal volto verde con benda sull'occhio, digital print" width="484" height="762"><span class="dp">Digital print</span><span class="label">20 / gaze</span></figure>
         </div>
       </section>
 
@@ -606,8 +622,11 @@ html:not(.js) #copy-mail{display:none}
           <div class="section-sub">Pennarelli, carta, una mano che non ha ancora finito.</div>
         </div>
         <div class="strip">
-          <figure class="card"><img loading="lazy" src="images/wip-cross-skull-a.webp" alt="Teschio con croce in lavorazione, colorato a mano" width="692" height="928"><span class="label">cross / colour</span></figure>
-          <figure class="card"><img loading="lazy" src="images/wip-split-skull.webp" alt="Teschio diviso disegnato a pennarello" width="1321" height="1600"><span class="label">split / marker</span></figure>
+          <figure class="card"><img loading="lazy" src="images/on-table-05.jpg" alt="Dettaglio in bianco e nero del teschio e delle linee" width="1106" height="1600"><span class="label">05 / study</span></figure>
+          <figure class="card"><img loading="lazy" src="images/on-table-04.jpg" alt="Disegno in bianco e nero di teschio con farfalla" width="1172" height="1600"><span class="label">04 / study</span></figure>
+          <figure class="card"><img loading="lazy" src="images/on-table-03.jpg" alt="Teschio disegnato in colori forti con farfalla" width="1097" height="1600"><span class="label">03 / study</span></figure>
+          <figure class="card"><img loading="lazy" src="images/on-table-02.jpg" alt="Teschio colorato con farfalla e occhi blu" width="1117" height="1600"><span class="label">02 / study</span></figure>
+          <figure class="card"><img loading="lazy" src="images/on-table-01.jpg" alt="Studio di teschio con farfalla e cromie vibranti" width="1220" height="1600"><span class="label">01 / study</span></figure>
         </div>
       </section>
 
